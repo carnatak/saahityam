@@ -1,16 +1,19 @@
 \documentclass[12pt]{article}
-\usepackage{fullpage}
-\usepackage{amsmath}
-\usepackage{tabularray}
-\usepackage{xcolor}
-\usepackage{hyperref}
-\usepackage{fancyhdr}
 
+\usepackage{fullpage} %narrower margins
+\usepackage{amsmath} %because math
+\usepackage{tabularray} %better than tabu apparently
+\usepackage{xcolor} %because color
+\usepackage{hyperref} %and then there were links
+\usepackage{fancyhdr} %footer
+
+%formatting footer
 \pagestyle{fancy}
 \fancyhf{}
-\rfoot{\underline{\href{https://github.com/k-dasika/carnatic-saahityam}{\color{blue2}{\scriptsize{source code}}}}}
+\rfoot{\underline{\href{https://github.com/carnatak/saahityam}{\color{blue2}{\scriptsize{source code}}}}}
 \renewcommand{\headrulewidth}{0pt}
 
+%shortcuts for single and double pipes at ends of lines
 \newcommand{\lp}{\rule[-0.4ex]{0.41pt}{2.3ex}}
 \newcommand{\tp}{\rule[-0.4ex]{0.41pt}{2.3ex} \rule[-0.4ex]{0.41pt}{2.3ex}}
 
@@ -63,17 +66,26 @@ ka&ma&ko&ti&sun&\lp&da&ra&nan&\lp&ne&lu&ko&ra&\tp\\
 \section*{Chittai Swaras}
 \begin{tblr}{}
 \textbf{(1)}\\
-\.{S};; \.{R} N P M R&\lp&G R S S&\lp&, R M P n&\tp\\
+\.{S};; \.{R} N P M R&\lp&G R S S&\lp&, R M P n&\tp&(ka)\\
 \textbf{(2)}\\
-N;; \.{s}npm rgrs \d{N}&\lp&; s\d{n}\d{p}\d{m} \d{p}\d{n}&\lp&sr \d{n}srmpn&\tp\\
+N;; \.{s}npm rgrs \d{N}&\lp&; s\d{n}\d{p}\d{m} \d{p}\d{n}&\lp&sr \d{n}srmpn&\tp&(ka)\\
 \textbf{(3)}\\
 M;; pnmp rgrrgr&\lp&S;; \d{n}s&\lp& rgrs rmpn&\tp\\
-pn\.{s}\.{r} \.{g}\.{r}\.{r} \.{g}\.{r}\.{r}\.{s}n pn\.{S}&\lp&\.{R}N pmrg&\lp&rs \d{n}srmpn&\tp\\
+pn\.{s}\.{r} \.{g}\.{r}\.{r} \.{g}\.{r}\.{r}\.{s}n pn\.{S}&\lp&\.{R}N pmrg&\lp&rs \d{n}srmpn&\tp&(ka)\\
+\textbf{(4)}\\
+Npm rgrs \d{N}\d{p}\d{m} \d{p}\d{n}sr&\lp&\d{N}sr grrs&\lp&\d{N}sr mrgr&\tp\\
+\d{N}sr pmrs \d{N}sr pmnp&\lp&N\.{s}\.{r} n\.{s}np&\lp&Npm rmpn&\tp&(ka)\\
+\textbf{(5)}\\
+\.{S};; \.{s}\.{r}n\.{s} pnmp rg&\lp&rrgrS \d{n}s&\lp&rgrs rmpn&\tp\\
+\.{s}N pdnpm rGr srS&\lp&s\d{N} \d{p}\d{n}\d{n}sr&\lp&srmr rmpn&\tp\\
+\.{s}\.{r}\.{g} n\.{s}\.{r} pn\.{s} mpn rmp s &\lp&rm \d{n}srmpn&\lp&\.{s}\.{r}\.{g} \.{r}\.{r}\.{s}\.{s}n&\tp\\
+\.{r}Ns pnmp nMp rgrs&\lp&r\d{N}s \d{p}\d{n}sr&\lp&\d{n}srs rmpn&\tp&(ka)\\
+
 \end{tblr}
 
 
-\iffalse
-Insert comments here
-\fi
+%\iffalse
+%Insert comments here
+%\fi
 
 \end{document} 
