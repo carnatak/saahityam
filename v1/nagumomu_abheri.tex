@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage} %narrower margins
+\usepackage{amsmath} %because math
+\usepackage{tabularray} %better than tabu apparently
+\usepackage{xcolor} %because color
+\usepackage{hyperref} %and then there were links
+\usepackage{fancyhdr} %footer
+
+%formatting footer
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\underline{\href{https://github.com/carnatak/saahityam}{\color{blue2}{\scriptsize{source code}}}}}
+\renewcommand{\headrulewidth}{0pt}
+
+%shortcuts for single and double pipes at ends of lines
+\newcommand{\lp}{\rule[-0.4ex]{0.41pt}{2.3ex}}
+\newcommand{\tp}{\rule[-0.4ex]{0.41pt}{2.3ex} \rule[-0.4ex]{0.41pt}{2.3ex}}
+
+\begin{document}
+\begin{flushleft}
+\begin{tblr}{lXr}
+\SetCell[c=3]{c} \huge{Nagumomu}  \\
+\\
+Ragam: Abheri&&22nd Melakarta Janyam\\
+Talam: Adi&&\\
+Composer: Thyagaraja&&Version: Bala Skandan\\
+\\
+\end{tblr}
+
+\begin{tblr}{llX}
+\textbf{Arohana}:&$\mathrm{s\:g_2\:m_1\:p\:n_2\:\dot{s}}$\\
+\textbf{Avarohana}:&$\mathrm{\dot{s}\:n_2\:d_2\:p\:m_1\:g_2\:r_2\:s}$\\
+\end{tblr}
+
+\end{flushleft}
+
+\section*{Pallavi}
+\begin{tblr}{row{even} = {font = \scriptsize ,fg = blue2}}
+\textbf{1}.&P&P&P\.{s}nN;&N;&&D&P&M;;;&M;&\lp&\\
+&na&gu&mo&mu&&ga&na&le&ni&\lp&\\
+
+&G;;;&rsR&S;&&\lp&\d{N}&S&ggs sgM gmP&&\tp\\
+&na&ja&li&&\lp&the&li&si&&\tp\\
+
+\textbf{2}.&P&P&Pnp pn\.{S}&\.{S};&&N&D&\.{s}nnd nddp&M;&\lp&\\
+&na&gu&mo&mu&&ga&na&le&ni&\lp&\\
+
+&gmgm pnpm&gmpm&grS&&\lp&\d{N}&S&ggs sgM gmP&&\tp\\
+&na&ja&li&&\lp&the&li&si&&\tp\\
+
+\textbf{3}.&P&P&Pnp pn\.{S}&n\.{s}\.{G}&&\.{s}\.{g}&\.{m}\.{g}&\.{g}\.{r}\.{r}\.{s} \.{s}nnd&dppm&\lp&\\
+&na&gu&mo&mu&&ga&na&le&ni&\lp&\\
+
+&\.{s}\.{r}\.{s}n pnpm&gmpm&grS&&\lp&\d{N}&S&ggs sgM gmP&&\tp\\
+&na&ja&li&&\lp&the&li&si&&\tp\\
+\end{tblr}
+
+\section*{Anupallavi}
+\begin{tblr}{row{even} = {font = \scriptsize ,fg = blue2}}
+  
+\end{tblr}
+
+\section*{Charanam}
+\begin{tblr}{row{even} = {font = \scriptsize ,fg = blue2}}
+ 
+\end{tblr}
+
+
+\end{document} 
