@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage} %narrower margins
+\usepackage{amsmath} %because math
+\usepackage{tabularray} %better than tabu apparently
+\usepackage{xcolor} %because color
+\usepackage{hyperref} %and then there were links
+\usepackage{fancyhdr} %footer
+
+%formatting footer
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\underline{\href{https://github.com/carnatak/saahityam}{\color{blue2}{\scriptsize{source code}}}}}
+\renewcommand{\headrulewidth}{0pt}
+
+%shortcuts for single and double pipes at ends of lines
+\newcommand{\lp}{\rule[-0.4ex]{0.41pt}{2.3ex}}
+\newcommand{\tp}{\rule[-0.4ex]{0.41pt}{2.3ex} \rule[-0.4ex]{0.41pt}{2.3ex}}
+
+%Logic for formatting every third row in a defined format
+\ExplSyntaxOn
+\NewChildSelector{eachthird}{
+    \int_step_inline:nnnn {3} {3} {\l_tblr_childs_total_tl}
+        {\clist_put_right:Nn \l_tblr_childs_clist {##1}}
+}
+\ExplSyntaxOff
+
+\begin{document}
+\begin{flushleft}
+\begin{tblr}{lXr}
+\SetCell[c=3]{c} \huge{Raara Venu}  \\
+\\
+Ragam: Bilahari&&29th Melakarta Janyam\\
+Talam: Adi&&Version: Bala Skandan\\
+\\
+\end{tblr}
+
+\begin{tblr}{llX}
+\textbf{Arohana}:&$\mathrm{s\:r_2\:g_3\:p\:d_2\:\dot{s}}$\\
+\textbf{Avarohana}:&$\mathrm{\dot{s}\:n_3\:d_2\:p\:m_1\:g_3\:r_2\:s}$\\
+\end{tblr}
+
+\end{flushleft}
+
+% First column has bold font & Saahityam lines have smaller font and are blue
+\section*{Pallavi}
+\begin{tblr}{
+  column{1} = {font=\bfseries}, 
+  row{eachthird} = {font = \scriptsize ,fg = blue2}, 
+  }
+  \\
+&S,&r&G&P&&&&D&\.{S}&N&D&\lp\\
+&raa&ra&ve&nu&&&&go&pa&ba&la&\lp\\
+\\
+&P&d&p&mg&r&s&\lp&r&s&\d{n}\d{d}&S;&\tp&\\
+&ra&ji&tha&sad&gu&na&\lp&ja&ya&se&la&\tp&\\
+\end{tblr}
+
+
+
+\section*{Charanam}
+\begin{tblr}{
+  column{1} = {font=\bfseries}, 
+  row{eachthird} = {font = \scriptsize ,fg = blue2}, 
+  }
+  \\
+1.&S,&r&G&P&&M,&g&P&D&\lp\\
+&saa&ra&saa&ksha&&ne&ra&me&mi&\lp\\
+\\
+&\.{R},&\.{s}&N&D&\lp&P,&m&G&R&\tp\\
+&maa&ru&ba&ri&\lp&ko&rva&le&ra&\tp&(raa ra)\\
+\\
+2.&S,&r&G&G&&G&;&;&rg&\lp\\
+&nan&da&go&pa&&la&-&-&ne&\lp\\
+\\
+&P,&p&P&P&\lp&P&;&;&dp&\tp\\
+&nin&du&ko&ja&\lp&la&-&-&nee&\tp\\
+\end{tblr}
+
+\begin{tblr}{
+  column{1} = {font=\bfseries}, 
+  row{eachthird} = {font = \scriptsize ,fg = blue2}, 
+  }
+  \\
+&\.{S},&\.{s}&&\.{S}&\.{S}&&&&\.{g}&\.{r}&\.{s}&n&n&d&P&&\lp\\
+&vin&do&&ra&ra&&&&sa&da&ma&la&ma&di&sho&&\lp\\
+\\
+&p&d&p&m&g&g&R&\lp&g&p&m&g&r&s&r&g&\tp\\
+&mu&da&ma&la&ra&ga&na&\lp&che&du&ru&ga&ga&di&ya&ra&\tp&(raa ra)\\
+\end{tblr}
+
+
+\end{document} 
