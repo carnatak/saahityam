@@ -1,9 +1,9 @@
 # Notations for carnatic compositions
 
-Each compisition is typeset as an individual document
+Each compisition is typeset as an individual document <br/>
 Space between lines to allow for notetaking 
 
-Convention: <br/>
+## Convention: <br/>
 
 Lowercase letters are one note: s <br/>
 Uppercase letters are two notes: S <br/>
