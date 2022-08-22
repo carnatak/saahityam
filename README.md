@@ -6,7 +6,7 @@ Space between lines to allow for notetaking
 ## Convention: <br/>
 
 Lowercase letters are one note: s <br/>
-Uppercase letters are two notes: S <br/>
+Uppercase letters are two notes: S = ss <br/>
 A comma extends the preceding note by one note: S, = sss <br/>
 A semicolon extends the preceding note by two notes: S; = ssss <br/>
 Underlined notes are double speed: <ins>R</ins> = r <br/>
